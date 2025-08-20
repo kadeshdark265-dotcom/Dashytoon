@@ -1,13 +1,81 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>موقعي — صفحة رئيسية</title>
+        <meta name="description" content="موقع عربي بسيط سريع ومتجاوب تم بناؤه من الهاتف." />
+          <link rel="stylesheet" href="./styles.css" />
+            <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌐</text></svg>">
+            </head>
+            <body>
+              <header class="site-header">
+                  <div class="container">
+                        <a class="logo" href="#">موقعي</a>
+                              <button id="menuBtn" class="menu-btn" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+                                    <nav id="nav" class="nav">
+                                            <a href="#home">الرئيسية</a>
+                                                    <a href="#features">المميزات</a>
+                                                            <a href="#contact">تواصل</a>
+                                                                  </nav>
+                                                                      </div>
+                                                                        </header>
+
+                                                                          <main>
+                                                                              <section id="home" class="hero section">
+                                                                                    <div class="container">
+                                                                                            <h1>مرحبًا 👋 — تم إنشاء هذا الموقع بالكامل من الموبايل!</h1>
+                                                                                                    <p>مثال عملي على موقع ثابت سريع، عربي، متجاوب. يمكنك تعديل النصوص بحرية.</p>
+                                                                                                            <a class="btn" href="#contact">ابدأ بالتواصل</a>
+                                                                                                                  </div>
+                                                                                                                      </section>
+
+                                                                                                                          <section id="features" class="features section">
+                                                                                                                                <div class="container grid">
+                                                                                                                                        <article class="card">
+                                                                                                                                                  <h3>بسيط</h3>
+                                                                                                                                                            <p>HTML + CSS + JS فقط. لا حاجة لخادم.</p>
+                                                                                                                                                                    </article>
+                                                                                                                                                                            <article class="card">
+                                                                                                                                                                                      <h3>سريع</h3>
+                                                                                                                                                                                                <p>أداء ممتاز على الجوّال وسهل النشر مجانًا.</p>
+                                                                                                                                                                                                        </article>
+                                                                                                                                                                                                                <article class="card">
+                                                                                                                                                                                                                          <h3>قابل للتخصيص</h3>
+                                                                                                                                                                                                                                    <p>عدّل الألوان والأقسام خلال دقائق.</p>
+                                                                                                                                                                                                                                            </article>
+                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                      </section>
+
+                                                                                                                                                                                                                                                          <section id="contact" class="contact section">
+                                                                                                                                                                                                                                                                <div class="container">
+                                                                                                                                                                                                                                                                        <h2>تواصل معنا</h2>
+                                                                                                                                                                                                                                                                                <p>املأ النموذج وسيصلنا بريدك. (يعمل عبر Formspree — إعداد بسيط بالأسفل)</p>
+
+                                                                                                                                                                                                                                                                                        <!-- استبدل {YOUR_FORM_ID} بمعرّف النموذج من Formspree لاحقًا -->
+                                                                                                                                                                                                                                                                                                <form id="contactForm" action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST" class="form">
+                                                                                                                                                                                                                                                                                                          <label>الاسم
+                                                                                                                                                                                                                                                                                                                      <input name="name" required placeholder="اسمك الكامل" />
+                                                                                                                                                                                                                                                                                                                                </label>
+                                                                                                                                                                                                                                                                                                                                          <label>البريد الإلكتروني
+                                                                                                                                                                                                                                                                                                                                                      <input type="email" name="email" required placeholder="[email protected]" />
+                                                                                                                                                                                                                                                                                                                                                                </label>
+                                                                                                                                                                                                                                                                                                                                                                          <label>رسالتك
+                                                                                                                                                                                                                                                                                                                                                                                      <textarea name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+                                                                                                                                                                                                                                                                                                                                                                                                </label>
+                                                                                                                                                                                                                                                                                                                                                                                                          <button class="btn" type="submit">إرسال</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                    <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+                                                                                                                                                                                                                                                                                                                                                                                                                            </form>
+                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                      </section>
+                                                                                                                                                                                                                                                                                                                                                                                                                                        </main>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          <footer class="site-footer">
+                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="container">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    <small>© <span id="year"></span> موقعي — جميع الحقوق محفوظة.</small>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          </footer>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <script src="./script.js"></script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </html>
