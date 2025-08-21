@@ -1,92 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashytoon | قصص كارتونية قصيرة</title>
-  <meta name="description" content="قصص كارتونية قصيرة، حلقات خفيفة، فنون ورسومات أصلية.">
-  <meta property="og:title" content="Dashytoon">
-  <meta property="og:description" content="اقرأ أحدث الحلقات الكارتونية وادعم المبدع.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://YOUR-USER.github.io/YOUR-REPO/">
-  <link rel="stylesheet" href="style.css">
-  <!-- ضع كود تحليلاتك هنا لاحقًا (GA / Plausible) -->
-</head>
-<body>
-  <header class="site-header">
-    <div class="brand">
-      <span class="logo">🎨</span>
-      <a href="./" class="title">Dashytoon</a>
-    </div>
-    <nav class="actions">
-      <button id="themeToggle" aria-label="تبديل الوضع">🌓</button>
-      <a class="btn silent" href="#support">الدعم</a>
-      <a class="btn" href="#subscribe">اشترك</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>قصص كارتونية قصيرة… تُقرأ بسرعة وتُحَب بسرعة 💛</h1>
-    <p>تصفّح الحلقات، ابحث بعنوان أو وسم، وأضف للمفضلة.</p>
-    <div class="search-wrap">
-      <input id="searchInput" type="search" placeholder="ابحث عن حلقة أو وسم (مثلاً: أكشن، كوميديا)">
-      <select id="sortSelect" aria-label="ترتيب">
-        <option value="new">الأحدث</option>
-        <option value="popular">الأكثر إعجابًا</option>
-        <option value="az">أبجديًا</option>
-      </select>
-    </div>
-  </section>
-
-  <main class="container">
-    <div id="cards" class="grid" aria-live="polite"></div>
-  </main>
-
-  <!-- نافذة العرض (لايت بوكس) -->
-  <div id="viewer" class="viewer" hidden>
-    <div class="viewer-backdrop" data-close></div>
-    <div class="viewer-card" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
-      <button class="viewer-close" data-close aria-label="إغلاق">✕</button>
-      <img id="viewerImg" alt="" loading="lazy">
-      <div class="viewer-meta">
-        <h2 id="viewerTitle"></h2>
-        <p id="viewerDesc"></p>
-        <div class="viewer-cta">
-          <button id="prevBtn" class="btn silent">السابق</button>
-          <button id="nextBtn" class="btn">التالي</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section id="support" class="support">
-    <h2>ادعم العمل</h2>
-    <p>ساعد على استمرار الحلقات عبر دعم بسيط.</p>
-    <div class="support-actions">
-      <a class="btn" href="https://ko-fi.com/" target="_blank" rel="noopener">Ko-fi ☕</a>
-      <a class="btn silent" href="https://www.patreon.com/" target="_blank" rel="noopener">Patreon ❤️</a>
-      <a class="btn silent" href="mailto:you@example.com">تواصل لعمولات</a>
-    </div>
-  </section>
-
-  <section id="subscribe" class="subscribe">
-    <h2>اشترك لتصلك الحلقات</h2>
-    <form id="subForm">
-      <input type="email" id="emailInput" placeholder="بريدك الإلكتروني" required>
-      <button type="submit" class="btn">اشترك الآن</button>
-    </form>
-    <small>لن نرسل سبام. إلغاء الاشتراك بأي وقت.</small>
-  </section>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Dashytoon — رسومات أصلية.</p>
-    <nav>
-      <a href="#" onclick="alert('أضف صفحة عنّا لاحقًا')">عنّا</a>
-      <a href="#" onclick="alert('أضف سياسة الخصوصية لاحقًا')">الخصوصية</a>
-      <a href="mailto:you@example.com">تواصل</a>
-    </nav>
-  </footer>
-
-  <script src="script.js" defer></script>
-</body>
-</html>
